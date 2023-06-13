@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import {v4 as uuidv4} from 'uuid'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from 'axios';
+import swal from 'sweetalert'
 // Importação de Componentes
 import './App.css'
 import AddTask from './components/AddTask'
@@ -35,7 +36,10 @@ const App = () => {
         }]
         setTasks(newTasks)
     }else{
-      window.alert('insira uma tarefa')
+      swal({
+        title: "Please write your task !",
+        icon: "warning",
+      });
     }
    
   }
