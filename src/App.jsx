@@ -37,7 +37,7 @@ const App = () => {
         setTasks(newTasks)
     }else{
       swal({
-        title: "Please write your task !",
+        title: "Escreva uma tarefa !",
         icon: "warning",
       });
     }
