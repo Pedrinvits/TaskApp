@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './button';
+import Button from './Button';
 import './TaskDetails.css';
 import {useParams, useNavigate} from 'react-router-dom';
 
